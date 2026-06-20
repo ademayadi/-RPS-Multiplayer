@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>RPS Multiplayer</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: white;
+        }
+
+        .box {
+            width: 420px;
+            margin: auto;
+            margin-top: 40px;
+            padding: 15px;
+            border: 2px solid #1976d2;
+            border-radius: 10px;
+        }
+
+        #chatBox {
+            height: 200px;
+            border: 1px solid #ccc;
+            overflow-y: auto;
+            margin: 10px 0;
+            padding: 5px;
+            text-align: left;
+        }
+
+        input {
+            width: 70%;
+            padding: 5px;
+        }
+
+        button {
+            padding: 5px 10px;
+            margin: 3px;
+            cursor: pointer;
+        }
+
+        .rps {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <h1>🎮 Pierre Feuille Ciseaux</h1>
+
+    <p id="status">Connexion...</p>
+
+    <!-- CHAT -->
+    <div id="chatBox"></div>
+
+    <input id="msgInput" placeholder="écris un message">
+    <button onclick="sendMessage()">Envoyer</button>
+
+    <!-- JEU -->
+    <div class="rps">
+        <h3>Choisis ton coup :</h3>
+
+        <button onclick="play('pierre')">🪨 Pierre</button>
+        <button onclick="play('feuille')">📄 Feuille</button>
+        <button onclick="play('ciseaux')">✂️ Ciseaux</button>
+
+        <h3 id="gameResult"></h3>
+    </div>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

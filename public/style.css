@@ -1,0 +1,17 @@
+#chatBox{
+    border:1px solid #1976d2;
+    height:200px;
+    overflow:auto;
+    margin:10px 0;
+    padding:5px;
+    text-align:left;
+}
+
+input{
+    width:70%;
+    padding:5px;
+}
+
+button{
+    padding:5px;
+}
