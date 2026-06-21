@@ -1,17 +1,37 @@
-#chatBox{
-    border:1px solid #1976d2;
-    height:200px;
-    overflow:auto;
-    margin:10px 0;
-    padding:5px;
-    text-align:left;
+body {
+    font-family: Arial;
+    text-align: center;
+    background: white;
 }
 
-input{
-    width:70%;
-    padding:5px;
+.box {
+    width: 420px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 15px;
+    border: 2px solid #1976d2;
+    border-radius: 10px;
 }
 
-button{
-    padding:5px;
+#chatBox {
+    height: 200px;
+    border: 1px solid #1976d2;
+    overflow-y: auto;
+    margin: 10px 0;
+    padding: 5px;
+    text-align: left;
+}
+
+input {
+    width: 70%;
+    padding: 5px;
+}
+
+button {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.rps {
+    margin-top: 15px;
 }
